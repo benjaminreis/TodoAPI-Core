@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{BBE787EC-B1C3-4108-843D-E203E0CE4947}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TodoAPI Status">
+    <Files>
+      <File FileName="TodoAPI Status" />
+      <File FileName="TodoAPI Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TodoAPI PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
