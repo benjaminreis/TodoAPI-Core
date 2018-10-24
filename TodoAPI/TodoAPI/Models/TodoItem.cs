@@ -1,4 +1,7 @@
-﻿namespace TodoAPI.Models
+﻿using System.Data;
+
+
+namespace TodoAPI.Models
 {
     public class TodoItem
     {
@@ -11,6 +14,15 @@
             this.Id = Id;
             this.Name = Name;
             this.IsComplete = IsComplete;
+        }
+
+        public TodoItem(DataRow dr)
+        {
+            this.Id = int.Parse((dr["id"] != null ? dr["id"].ToString() : ""));
+            this.Name = dr["Name"] != null ? dr["Name"].ToString() : "";
+            this.IsComplete = bool.Parse((dr["IsComplete"] != null ? dr["IsComplete"].ToString() : "1"));
+
+
         }
     }
 
