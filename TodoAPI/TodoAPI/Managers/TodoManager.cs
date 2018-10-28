@@ -1,12 +1,17 @@
 ﻿using System;
 namespace TodoAPI.Managers
 {
-    public class TodoManager
+    internal class TodoManager
     {
-        public TodoManager()
+        internal TodoManager()
         {
         }
 
+        private Data.TodoData TodoData = new Data.TodoData();
 
+        internal Models.TodoItem GetTodoItem(int ID)
+        {
+            return TodoData.GetTodoItem(ID);
+        }
     }
 }
