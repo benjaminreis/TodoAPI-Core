@@ -3,8 +3,10 @@ namespace TodoAPI.Managers
 {
     internal class TodoManager
     {
-        internal TodoManager()
+        private Factory _Factory;
+        internal TodoManager(Factory Factory)
         {
+            _Factory = Factory;
         }
 
         private Data.TodoData TodoData = new Data.TodoData();

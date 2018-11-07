@@ -16,7 +16,7 @@ namespace TodoAPI
             get {
                 if (_TodoManager == null)
                 {
-                    _TodoManager = new Managers.TodoManager();
+                    _TodoManager = new Managers.TodoManager(this);
                 }
                 return _TodoManager;
             }
