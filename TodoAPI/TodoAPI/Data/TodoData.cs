@@ -47,7 +47,8 @@ namespace TodoAPI.Data
         {
             var listTodoItems =  new List<Models.TodoItem>();
 
-
+            listTodoItems = TodoMockData.AllTodoData();
+            //TODO BEN implement this for realz!
             return listTodoItems;
 
         }

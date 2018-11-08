@@ -11,11 +11,10 @@ namespace TodoAPI.Managers
             _Factory = Factory;
         }
 
-        private Data.TodoData TodoData = new Data.TodoData();
 
         internal Models.TodoItem GetTodoItem(int ID)
         {
-            return TodoData.GetTodoItem(ID);
+            return _Factory.TodoData.GetTodoItem(ID);
         }
 
         internal List<Models.TodoItem> GetAllTodoItems()

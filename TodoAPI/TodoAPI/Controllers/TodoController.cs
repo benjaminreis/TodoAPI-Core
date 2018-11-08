@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TodoAPI.Models;
 
+
 namespace TodoApi.Controllers
 {
     [Route("api/[controller]")]
@@ -27,8 +28,8 @@ namespace TodoApi.Controllers
         }
 
 
-        [HttpGet]
-        public ActionResult<List<TodoItem>> GetAll()
+        [HttpGet("GetAll")]
+        public List<TodoItem> GetAll()
         {
 
             return _Factory.TodoManager.GetAllTodoItems();
@@ -39,6 +40,13 @@ namespace TodoApi.Controllers
         {
             var temp = new TodoItem(id, "test ben5000", true);
             return temp;
+        }
+
+
+        [HttpPost]
+        public TodoItem Save(TodoItem todoItem)
+        {
+            return new TodoItem(999, "", true);
         }
     }
 }
