@@ -39,6 +39,16 @@ namespace TodoAPI.Data
 
         }
 
+
+        internal List<Models.TodoItem> GetAllTodoItems()
+        {
+            var listTodoItems =  new List<Models.TodoItem>();
+
+
+            return listTodoItems;
+
+        }
+
 #endregion
 
 

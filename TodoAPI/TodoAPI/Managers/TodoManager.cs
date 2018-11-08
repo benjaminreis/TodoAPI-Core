@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace TodoAPI.Managers
 {
     internal class TodoManager
@@ -14,6 +16,11 @@ namespace TodoAPI.Managers
         internal Models.TodoItem GetTodoItem(int ID)
         {
             return TodoData.GetTodoItem(ID);
+        }
+
+        internal List<Models.TodoItem> GetAllTodoItems()
+        {
+            return _Factory.
         }
     }
 }
