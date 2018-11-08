@@ -8,8 +8,11 @@ namespace TodoAPI.Data
 {
     internal class TodoData
     {
-        internal TodoData()
+        private Factory _Factory;
+
+        internal TodoData(Factory factory)
         {
+            _Factory = factory;
         }
 
         private string _sqlConn = "";

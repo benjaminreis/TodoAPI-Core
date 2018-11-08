@@ -9,6 +9,8 @@ namespace TodoApi.Controllers
     [ApiController]
     public class TodoController : ControllerBase
     {
+
+        private TodoAPI.Factory _Factory = new TodoAPI.Factory();
         //private readonly TodoContext _context;
 
         public TodoController()
@@ -28,7 +30,8 @@ namespace TodoApi.Controllers
         [HttpGet]
         public ActionResult<List<TodoItem>> GetAll()
         {
-            return new List<TodoItem>();
+
+            return _Factory.TodoManager.GetAllTodoItems();
         }
 
         [HttpGet("{id}")]

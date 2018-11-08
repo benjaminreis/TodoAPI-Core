@@ -20,7 +20,9 @@ namespace TodoAPI.Managers
 
         internal List<Models.TodoItem> GetAllTodoItems()
         {
-            return _Factory.
+            return _Factory.TodoData.GetAllTodoItems();
         }
+
+
     }
 }

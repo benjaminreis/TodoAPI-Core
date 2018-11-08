@@ -11,22 +11,40 @@ namespace TodoAPI
 
         private Managers.TodoManager _TodoManager;
 
-    internal Managers.TodoManager TodoManager
+        internal Managers.TodoManager TodoManager
         {
-            get {
+            get 
+            {
                 if (_TodoManager == null)
                 {
                     _TodoManager = new Managers.TodoManager(this);
                 }
                 return _TodoManager;
             }
-            set
-            {
-                _TodoManager = value;
-            }
+            //set
+            //{
+            //    _TodoManager = value;
+            //}
                 
         }
 
+
+        private Data.TodoData _TodoData;
+        internal Data.TodoData TodoData
+        {
+            get 
+            {
+                if (_TodoData == null)
+                {
+                    _TodoData = new Data.TodoData(this);
+                }
+                return _TodoData;
+            }
+            //set
+            //{
+            //    _TodoData = value;
+            //}
+        }
 
 
 
