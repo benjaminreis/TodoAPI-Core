@@ -8,12 +8,18 @@ namespace TodoAPI.Models
         public long Id { get; set; }
         public string Name { get; set; }
         public bool IsComplete { get; set; }
+        public bool Success { get; set; } = true;  //TODO BEN may need to rethink whether i want this to default to false or true...
 
         public TodoItem(int Id, string Name, bool IsComplete)
         {
             this.Id = Id;
             this.Name = Name;
             this.IsComplete = IsComplete;
+        }
+
+        public TodoItem()
+        {
+
         }
 
         public TodoItem(DataRow dr)

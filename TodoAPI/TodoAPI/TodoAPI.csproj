@@ -10,6 +10,7 @@
     <Folder Include="DbStuff\" />
     <Folder Include="Data\" />
     <Folder Include="Managers\" />
+    <Folder Include="Engines\" />
   </ItemGroup>
 
   <ItemGroup>

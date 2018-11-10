@@ -22,6 +22,21 @@ namespace TodoAPI.Managers
             return _Factory.TodoData.GetAllTodoItems();
         }
 
+        internal Models.TodoItem SaveTodoItem(Models.TodoItem todoItem)
+        {
+            if (!_Factory.TodoEngine.ValidateTodoItem(todoItem))
+            {
+                todoItem.Success = false;
+                return todoItem;
+            }
+
+
+
+
+            return todoItem;
+        }
+
+
 
     }
 }

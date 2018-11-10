@@ -46,7 +46,23 @@ namespace TodoAPI
             //}
         }
 
+        private Engines.TodoEngine _TodoEngine;
+        internal Engines.TodoEngine TodoEngine
+        {
+            get
+            {
+                if (_TodoEngine == null)
+                {
+                    _TodoEngine = new Engines.TodoEngine(this);
 
+                }
+                return _TodoEngine;
+            }
+            //set
+            //{
+            //    _TodoEngine = value;
+            //}
+        }
 
 
     }
