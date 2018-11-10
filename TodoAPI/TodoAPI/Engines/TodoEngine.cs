@@ -11,6 +11,7 @@ namespace TodoAPI.Engines
 
 
 
+        #region "Internal Methods"
 
         internal bool ValidateTodoItem(Models.TodoItem todoItem)
         {
@@ -26,6 +27,9 @@ namespace TodoAPI.Engines
 
             return IsValid;
         }
+
+
+        #endregion
 
     }
 }
