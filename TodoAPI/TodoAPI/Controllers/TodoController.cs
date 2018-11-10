@@ -48,5 +48,11 @@ namespace TodoApi.Controllers
         {
             return new TodoItem(999, "", true);
         }
+
+
+        //TODO BEN
+        //For more complex API's with larger datasets, id implement some searching functionality.
+        //For larger data sets, a 'getall" would break everything.
+        //we need a search to narrow down.
     }
 }
