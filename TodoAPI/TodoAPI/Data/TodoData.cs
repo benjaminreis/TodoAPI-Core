@@ -76,7 +76,7 @@ namespace TodoAPI.Data
 
             else
             {
-              //TODO BEN ideall
+              //TODO BEN ideally wed do a "getone" to get the one i just added to the database.
             }
 
             return todoItem;
