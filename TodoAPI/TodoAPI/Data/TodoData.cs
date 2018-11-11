@@ -84,26 +84,6 @@ namespace TodoAPI.Data
 
 
 
-        //internal string AddVolunteer(DataModels.Volunteer volunteer)
-        //{
-        //    var sql = $"INSERT INTO Volunteers(FirstName, LastName, roleId) VALUES(?firstname, ?lastname, ?roleid); SELECT LAST_INSERT_ID(); ";
-        //    List<MySqlParameter> Parameters = new List<MySqlParameter>();
-
-        //    MySqlCommand cmd = new MySqlCommand(sql);
-
-        //    cmd.Parameters.AddWithValue("?firstname", volunteer.FirstName);
-        //    cmd.Parameters.AddWithValue("?lastname", volunteer.LastName);
-        //    cmd.Parameters.AddWithValue("?roleid", volunteer.RoleID);
-
-        //    var DataTable = BuildDataTable(cmd);
-        //    var obj = DataTable.Rows[0]["LAST_INSERT_ID()"];
-        //    if (obj != null)
-        //    {
-        //        return obj.ToString();
-        //    }
-
-        //    return "Error";
-        //}
 
         #endregion
 
